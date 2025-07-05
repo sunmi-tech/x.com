@@ -1,0 +1,7 @@
+.active .navPill {
+  font-weight: 700;
+}
+
+.active svg {
+  fill: black;
+}
