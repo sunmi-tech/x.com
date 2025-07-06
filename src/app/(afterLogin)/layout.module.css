@@ -17,7 +17,7 @@
 }
 
 .leftSection nav {
-    flex: 1;
+  flex: 1;
 }
 
 .leftSection nav li {
@@ -58,7 +58,6 @@
   position: fixed;
   width: inherit;
   height: 100dvh;
-  background-color: orange;
   display: flex;
   flex-direction: column;
 }
@@ -111,7 +110,6 @@
 }
 
 .rightSectionInner {
-  background-color: aqua;
   height: 100%;
   width: 990px;
   display: flex;
@@ -119,12 +117,10 @@
 }
 
 .main {
-  background-color: aliceblue;
   width: 600px;
 }
 
 .rightSection {
-  background-color: blue;
   width: 350px;
   height: 100%;
 }
@@ -142,9 +138,8 @@
   align-items: center;
 }
 
-.serach svg {
+.search svg {
   margin-left: 20px;
-  fill: rgb(83, 100, 113);
 }
 
 .search input {
@@ -154,4 +149,18 @@
   padding: 12px;
   margin-left: 5px;
   font-size: 15px;
+}
+
+.followRecommend {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(247, 249, 249);
+  border-radius: 16px;
+  margin: 12px 0;
+  padding: 12px 16px;
+
+}
+
+.followRecommend h3 {
+  padding-bottom: 12px;
 }
