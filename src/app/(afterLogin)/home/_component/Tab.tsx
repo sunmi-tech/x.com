@@ -1,17 +1,17 @@
 "use client";
-import style from './tab.module.css';
-import { useState } from 'react';
+import style from "./tab.module.css";
+import { useState } from "react";
 
 export default function Tab() {
-    const [ tab, setTab ]= useState('rec');
+  const [tab, setTab] = useState("rec");
 
-    const onClickRec = () => {
-        setTab('rec');
-    }
+  const onClickRec = () => {
+    setTab("rec");
+  };
 
-    const onClickFol = () => {
-        setTab('fol');
-    }
+  const onClickFol = () => {
+    setTab("fol");
+  };
 
   return (
     <div className={style.homeFixed}>
@@ -19,10 +19,11 @@ export default function Tab() {
       <div className={style.homeTab}>
         <div onClick={onClickRec}>
           추천
-          <div className={style.tabIndicator} hidden={tab === 'fol'}></div>
-          <div onClick={onClickFol}>
-            팔로우 중<div className={style.tabIndicator} hidden={tab === 'rec'}></div>
-          </div>
+          <div className={style.tabIndicator} hidden={tab === "fol"}></div>
+        </div>
+        <div onClick={onClickFol}>
+          팔로우 중
+          <div className={style.tabIndicator} hidden={tab === "rec"}></div>
         </div>
       </div>
     </div>
