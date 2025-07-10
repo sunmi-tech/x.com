@@ -25,7 +25,7 @@ export default function TweetModal() {
 
   const me = {
     id: "zerohch0",
-    image: "/5Udwvqim.jpg",
+    image: "/Logo.svg",
   };
 
   return (

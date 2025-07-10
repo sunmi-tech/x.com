@@ -2,6 +2,7 @@
 
 import style from "./postForm.module.css";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 export default function PostForm() {
   const imageRef = useRef<HTMLInputElement>(null);
