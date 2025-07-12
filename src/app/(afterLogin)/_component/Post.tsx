@@ -4,6 +4,7 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import 'dayjs/locale/ko';
 import ActionButtons from './ActionButtons';
+import PostArticle from './PostArticle';
 
 dayjs.locale('ko');
 dayjs.extend(relativeTime)
@@ -11,6 +12,7 @@ dayjs.extend(relativeTime)
 export default function Post() {
   const target = {
     User: {
+      postId: 1,
       id: 'elonmusk',
       nickname: 'Elon Musk',
       image: '/logo.svg',
@@ -20,7 +22,7 @@ export default function Post() {
     Images: [],
   }
   return (
-    <article className={style.post}>
+    <PostArticle post={target} className={style.post}>
       <div className={style.postWrapper}>
         <div className={style.postUserSection}>
           <Link href={`/${target.User.id}`} className={style.postUserImage}>
@@ -47,6 +49,6 @@ export default function Post() {
           <ActionButtons />
         </div>
       </div>
-    </article>
+    </PostArticle>
   )
 }
